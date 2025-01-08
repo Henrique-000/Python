@@ -1,0 +1,13 @@
+from random import randint # importando a biblioteca random para escolher
+# um número de 1 a 5.
+var1 = int(input('Adivinhe o número em que eu estou pensando: '))
+var2 = randint(1,5) # Colocando o random em ação para escolher um
+# número de 1 a 5.
+if var1 != var2 and var1 < 5: # Condições para verificar se o número informado, é
+    print(f'Errou, pensei em {var2}')# igual ao que o computador pensou.
+    print('Tente de novo.')
+elif var1 == var2:
+    print(f'Pensei em {var2}.')
+    print('Parabéns! Você acertou.')
+elif var1 > 5:
+    print('Número inválido.')
